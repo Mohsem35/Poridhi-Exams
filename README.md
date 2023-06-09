@@ -41,3 +41,20 @@ DESCRIBE books;
 ```
 SELECT * FROM test.books;
 ```
+##### Insert data into tables
+```
+INSERT INTO test.books (title, description, cover, price) VALUES ('Childs play', 'Child Book', 'fancy pens', 18);
+```
+##### Create table
+```
+CREATE TABLE test.books (
+    id INT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(45) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    cover VARCHAR(45),
+    PRIMARY KEY (id)
+);
+```
+```
+ALTER TABLE test.books ADD COLUMN price INT NOT NULL AFTER cover;
+```

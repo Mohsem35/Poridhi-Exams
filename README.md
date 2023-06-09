@@ -69,6 +69,7 @@ ALTER TABLE test.books ADD COLUMN price INT NOT NULL AFTER cover;
 ```
 npm init -y
 npm i express mysql nodemon
+npm i cors
 npm start
 ```
 Nodemon is a popular tool used in Node.js development. It stands for "Node Monitor" and is designed to automatically monitor and restart your Node.js application when changes are detected in the source code.
@@ -85,3 +86,5 @@ Install React Router DOM fro POST request
 ```
 npm i react-router-dom
 ```
+
+Axios is a popular JavaScript library used for making HTTP requests from a web browser or Node.js environment. It provides an easy-to-use and consistent API for performing asynchronous HTTP requests, handling responses, and managing request and response interceptors.

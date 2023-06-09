@@ -63,3 +63,13 @@ CREATE TABLE test.books (
 ```
 ALTER TABLE test.books ADD COLUMN price INT NOT NULL AFTER cover;
 ```
+
+## Initialization backend
+
+```
+npm init -y
+npm i express mysql nodemon
+npm start
+```
+Nodemon is a popular tool used in Node.js development. It stands for "Node Monitor" and is designed to automatically monitor and restart your Node.js application when changes are detected in the source code.
+

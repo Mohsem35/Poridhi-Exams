@@ -33,6 +33,11 @@ sudo mysql -e "SHOW DATABASES;" -p
 sudo mysql -u root -proot -h localhost test
 ```
 
+##### Create schema
+```
+CREATE SCHEMA test;
+```
+
 ##### Show tables colums:
 ```
 DESCRIBE books;

@@ -81,3 +81,7 @@ Nodemon is a popular tool used in Node.js development. It stands for "Node Monit
 npx create-react-app .
 npm start
 ```
+Install React Router DOM fro POST request
+```
+npm i react-router-dom
+```

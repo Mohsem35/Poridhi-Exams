@@ -73,3 +73,11 @@ npm start
 ```
 Nodemon is a popular tool used in Node.js development. It stands for "Node Monitor" and is designed to automatically monitor and restart your Node.js application when changes are detected in the source code.
 
+
+
+## Initialization frontend
+
+```
+npx create-react-app .
+npm start
+```

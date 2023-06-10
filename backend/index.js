@@ -1,16 +1,17 @@
 import express from "express";
 import mysql from "mysql";
-import cors from "cors";
+
+// CORS stands for Cross-Origin Resource Sharing. It is a mechanism implemented in web browsers to control access to resources (such as APIs or web pages) 
+// from different origins (domains, protocols, or ports).
+import cors from "cors";    
 
 const app = express();  
 app.use(cors());                                //using cors 
 app.use(express.json());                     //use express server to send json
 
 //sudo mysql -u root -proot -h localhost test 
-
 const db = mysql.createConnection({
   host: "localhost",
-  port: "3306",
   user: "root",
   password: "root",
   database: "test",
@@ -18,7 +19,7 @@ const db = mysql.createConnection({
 
 
 //API test: localhost:8800/books
-
+// GET REQUEST
 app.get("/", (req, res) => {
   res.json("hello");
 });
@@ -53,6 +54,7 @@ app.post("/books", (req, res) => {
   });
 
 
+  // DELETE REQUEST
   app.delete("/books/:id", (req, res) => {                  // id wise delete
     const bookId = req.params.id;
     const q = " DELETE FROM books WHERE id = ? ";
@@ -63,6 +65,7 @@ app.post("/books", (req, res) => {
     });
   });
   
+  // UPDATE REQUEST 
   app.put("/books/:id", (req, res) => {
     const bookId = req.params.id;
     const q = "UPDATE books SET `title`= ?, `desc`= ?, `price`= ?, `cover`= ? WHERE id = ?";

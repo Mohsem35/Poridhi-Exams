@@ -10,6 +10,8 @@ const Add = () => {
     price: null,
     cover: "",
   });
+
+  //State is used to manage and store data that can change over time within a component.
   const [error,setError] = useState(false)
 
   const navigate = useNavigate();

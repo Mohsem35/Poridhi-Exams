@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const Books = () => {
   const [books, setBooks] = useState([]);                       // useState for saving data
 
+  //In React, the useEffect() hook is used to handle side effects in functional components. 
   useEffect(() => {
     const fetchAllBooks = async () => {                         // fetching book using API request useEffect() function
       try {
